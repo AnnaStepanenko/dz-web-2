@@ -1,0 +1,30 @@
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    border-radius: 10000px;
+    background: #f1f1f1;
+}
+.icon-lightning{
+width: 100px;
+height: 100px;
+flex-shrink: 0;
+border-radius: 10000px;
+background: #F1F1F1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.icon-ellipsis{
+    width: 64px;
+    height: 64px;
+flex-shrink: 0;
+border-radius: 10000px;
+background: #F1F1F1;
+display: flex;
+align-items: center;
+justify-content: center;
+}

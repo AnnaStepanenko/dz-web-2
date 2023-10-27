@@ -1,0 +1,969 @@
+@import './identic/colors';
+@import "./identic/typography";
+@import "./identic/mixins";
+@import "./identic/btns";
+@import './identic/icons';
+@import './identic/cards';
+@import "./blocks/header";
+@import "./blocks/promo";
+@import "./blocks/works";
+@import './blocks/designer';
+@import './blocks/services';
+@import './blocks/price';
+@import './blocks/feedback';
+@import './blocks/application';
+
+
+*{
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+@media(max-width:1200px) {
+    .container{
+       width: 90%;
+    } 
+    .header{
+       &__programmer-wrapper {
+          display: none;
+           }
+        &__lightning-wrapper {
+            display: none;
+             }
+           
+        &__ellipsis-wrapper {
+            display: none;
+            }   
+    }
+    .designer{
+        &__cup-wrapper{
+            display: none;
+            
+        }
+    }
+    .price{
+        &__programmer-wrapper {
+            display: none;
+             }
+        &__clock-wrapper{
+            display: none;
+                 }
+        }
+    .application{
+        &__programmer-wrapper {
+            display: none;
+             }
+        &__lightning-wrapper{
+                display: none;
+                 }
+        &__ellipsis-wrapper{
+                display: none;
+                }  
+            }
+    .icon-ellipsis{
+        display: none;
+    }
+    .services{
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card-text-descr3{  
+    width: 300px;
+    }
+    }
+    .feedback{
+       
+   &__cards{
+    display: inline-flex;
+    width: 1058px;
+   }
+    }
+    
+   .card_feedback{
+    width: 1058px;
+   }
+   .application{
+    &__social{
+        right: 320px;
+   }}
+}
+@media(max-width:900px) {
+    .header{
+        &__empty{
+         display: none;  
+        }
+    }
+    .works{
+        height: 1300px;
+       
+        
+        &__buildings{
+            width: 725px;
+            height: 287px;
+             display: inline-flex;
+            
+        }
+        &__examples-group{
+              display: inline-flex;
+        }
+        &__stereo{
+            width: 315px;
+            height: 250px;
+            
+        }
+        &__artist{
+            width: 315px;
+            height: 250px;
+        }
+        &__landscape{
+            width: 725px;
+            height: 287px;
+            display: inline-flex;
+        }
+        &__scheme{
+            width: 350px;
+            height: 275px;}
+        &__posts{
+            width: 350px;
+            height: 275px;}
+    }
+    .designer{
+        &__photo-man{
+            width: 250px;
+            height: 350px;
+        }
+        &__photo-about{
+            width: 327px;
+            height: 255px;
+        }
+        &__title{
+                color: $black_main;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; 
+            width: 298px;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            
+        }
+        &__text{
+            color: $black_main;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px; 
+            width: 302px;
+            padding-bottom: 15px;
+            margin-left: 25px;
+        }
+        &__text-numbers{
+            
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 15px; 
+        }
+        &__numbers-text{
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px; 
+        }
+        &__statistics-all{
+            margin-left: 25px;
+            margin-top: 25px;}
+        &__statistics{
+            gap: 10px;
+        }
+        &__descr{
+            display: flex;
+            justify-content: center;
+         
+            width: 623px;
+            height: 350px;
+           
+        }
+        }
+        .services{
+          &__content{
+            height: 700px;}
+            &__card-text{
+                font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 15px; 
+            }
+            &__card-text-descr{
+                font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px; 
+          
+            }
+            &__card-text-descr3{
+                font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px; 
+            width: 170px;
+          
+            }
+            &__cards-elements{
+                gap: 35px;
+                width: 160px;
+            }
+            &__card-text_numeric{
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 15px; 
+            }
+            .card{
+                height: 300px;
+            }
+            
+        }
+        .feedback{
+       
+            &__cards{
+                display: inline-flex;
+             width: 725px;
+            }
+            &__cards-second{
+                gap: 15px;
+            }
+             }
+            .card_feedback{
+             width: 725px;
+            }
+        .application{
+            &__social{
+                top: 6000px;
+                right: 180px;
+            }
+        }
+
+    }
+    @media(max-width:700px) {
+        .header{
+            &__logo{
+                height: 20px;
+        }
+        &__list-item {  
+            color: #000;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 15px;}
+
+    }
+    .promo{
+        &__title{
+            font-size: 34px;
+font-style: normal;
+font-weight: 600;
+line-height: 34px; 
+        }
+        &__descr{
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+        &__btns-group{
+            gap: 10px;
+            margin-top: 70px;
+            display: inline-flex;
+           flex-direction: column;
+            justify-content: center;
+        }
+        &__btn_tg{
+            width:300px ;
+            height: 60px;
+            border-radius: 20px;
+        }
+        .btn_outlined{
+            width:300px;
+            height: 60px;
+            border-radius: 20px;
+        }
+    }
+    .works{
+        height: 1055px;
+       
+        
+        &__buildings{
+            width: 563px;
+            height: 223px;
+             display: inline-flex;
+            
+        }
+        &__examples-group{
+              display: inline-flex;
+        }
+        &__stereo{
+            width: 245px;
+            height: 194px;
+            
+        }
+        &__artist{
+            width: 245px;
+            height: 194px;
+        }
+        &__landscape{
+            width: 563px;
+            height: 223px;
+            display: inline-flex;
+        }
+        &__scheme{
+            width: 272px;
+            height: 213px;}
+        &__posts{
+            width: 272px;
+            height: 213px;}
+    }
+    .designer{
+    
+        &__photo-man{
+                width: 200px;
+                height: 300px;
+            }
+    }
+    .services{
+        &__content{
+            height: 1000px;
+    }
+    .card{
+      
+        max-width:300px;  
+       
+    }
+    &__cards-elements{
+        width: 200px;
+    }
+    &__title{
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px; 
+    }
+}
+.price{
+    &__title{
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px; 
+    }
+    &__card{  
+        width: 440px;
+        height: 360px;}
+    &__slip_title{
+           font-size: 25px;}
+}
+.feedback{
+    &__title{
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px; 
+    }
+    &__cards{
+        display: inline-flex;
+     width: 563px;
+    }
+    &__cards-second{
+        gap: 10px;
+    }
+    &__text{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    &__text-list{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+     }
+    .card_feedback{
+     width: 563px;
+    }
+    .application{
+        height: 900px;
+        &__title{
+            font-size: 34px;
+        
+        }
+        &__card{
+            margin-top: 40px;
+        }
+        &__social{
+            top: 6050px;
+            right: 90px;
+       }}
+}
+@media(max-width:500px) {
+    .header{
+     &__logo{
+        padding: 8px 8px;
+        height: 5px;
+        border: 1px solid $black_main;}
+ 
+        &__list{
+            gap: 16px;}
+    &__list-item {  
+        color: #000;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;}
+    }
+    .promo{
+        padding: 30px 0px 70px 0px;
+        &__title{
+            font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; 
+        }
+        &__descr{
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            margin-top: 20px;
+            width: 400px;
+        }
+        &__btns-group{
+            gap: 10px;
+            margin-top: 40px;
+            display: inline-flex;
+           flex-direction: column;
+            justify-content: center;
+        }
+        &__btn_tg{
+            width:250px ;
+            height: 30px;
+            border-radius: 20px;
+        }
+        .btn_outlined{
+            width:250px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        }
+        .works{
+            height: 737px;
+            .btn-small{
+                font-size: 10px;
+                 font-style: normal;
+                 font-weight: 600;
+                 line-height: 15px;
+             }
+             &__btns-list{
+                  gap: 12px;
+             }
+
+                &__buildings{
+                    width: 402px;
+                    height: 159px;
+                     display: inline-flex;
+                     margin-top: 30px;
+                }
+                &__examples-group{
+                      display: inline-flex;
+                      gap: 20px;
+                }
+                &__stereo{
+                    width: 175px;
+                    height: 138px;
+                    margin-top: 20px;
+                }
+                &__artist{
+                    width: 175px;
+                    height: 138px;
+                    margin-top: 20px;
+                }
+                &__landscape{
+                    width: 402px;
+                    height: 159px;
+                    display: inline-flex;
+                    margin-top: 20px;
+                }
+                &__scheme{
+                    width: 194px;
+                    height: 152px;
+                    margin-top: 20px;}
+                &__posts{
+                    width: 194px;
+                    height: 152px;
+                    margin-top: 20px;}
+            
+        }
+        .designer{
+            padding-top: 90px;
+           
+                &__photo-man{
+                        width: 200px;
+                        height: 300px;
+                    }
+                    &__photo-about{
+                        width: 254px;
+                        height: 250px;
+                     
+                    }
+                    &__title{
+                            color: $black_main;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px; 
+                        width: 298px;
+                        margin-left: 20px;
+                        margin-bottom: 15px;
+                        
+                    }
+                    &__text{
+                        color: $black_main;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 15px; 
+                        width: 234px;
+                        padding-bottom: 10px;
+                        margin-left: 20px;
+                    }
+                    &__text-numbers{
+                    font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 10px; 
+                    }
+                    &__numbers-text{
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 15px; 
+                    }
+                    &__statistics-all{
+                        margin-left: 20px;
+                        margin-top: 15px;
+                    gap: 30px;}
+                    &__statistics{
+                        gap: 5px;
+                    }
+                    &__descr{
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items:center;
+                        padding-left: 50px;
+                    } }
+            .services{
+                &__content{
+                    height: 1300px;
+            }
+            .card{
+               max-width:250px;  
+               
+            }
+            &__cards{
+                justify-content: center;
+
+            }
+            &__cards-elements{
+                width: 200px;
+            }
+            &__title{
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px; 
+            }}
+            .price{
+                height: 1000px;
+                &__title{
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 34px; 
+                }
+                &__card{  
+                    width: 314px;
+                    }
+                &__form{
+                    height: 100px;
+                    width: 300px ;
+                }
+                &__card_btn-count{
+                    width: 250px ;
+
+                }
+                &__thype{
+                    width: 300px ; 
+                }
+                &__card_btn{
+                    padding-top: 100px;
+                }
+                &__slip{
+                    width: 350px;
+                    height: 300px;
+                    gap: 10px;
+    
+                }
+                &__slip_title{
+                       font-size: 20px;}
+                &__slip_btn-discuss{
+                        width: 250px;
+                    }
+            }
+            .feedback{
+                &__title{
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 34px; 
+                }
+                &__cards{
+                    display: inline-flex;
+                 width: 450px;
+                }
+                &__cards-second{
+                    gap: 10px;
+                }
+                &__text{
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+                &__text-list{
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+                 }
+                .card_feedback{
+                 width: 450px;
+                }
+                .application{
+                    height: 900px;
+                    &__title{
+                        font-size: 30px;
+                    
+                    }
+                    &__card{
+                        margin-top: 40px;
+                        height: 600px;
+                        width: 300px;
+                    }
+                    &__form{
+                        width: 280px;
+                    }
+                    &__thype{
+                        width: 280px;
+                    }
+                    &__comment{
+                        width: 280px;
+                    }
+                    &__btn-submit{
+                        width: 280px;
+                    }
+                    &__social{
+                        top: 6050px;
+                        right: 190px;
+                        flex-direction: row; }}
+        }
+        @media(max-width:300px) {
+            .header{
+            &__logo{
+               padding: 8px 6px;
+               border: 1px solid $black_main;}
+               &__list{
+                   display: none;}
+           }
+           .promo{
+               padding: 20px 0px 70px 0px;
+               &__title{
+                   font-size: 20px;
+       font-style: normal;
+       font-weight: 600;
+       line-height: 20px; 
+               }
+               &__descr{
+                   font-size: 10px;
+                   font-style: normal;
+                   font-weight: 500;
+                   line-height: 15px;
+                   margin-top: 30px;
+                   width: 250px;
+               }
+               &__btns-group{
+                   gap: 10px;
+                   margin-top: 40px;
+                   display: inline-flex;
+                  flex-direction: column;
+                   justify-content: center;
+               }
+               &__btn_tg{
+                   width:160px ;
+                   height: 30px;
+                   border-radius: 20px;
+                   font-size: 10px;
+               }
+               .btn_outlined{
+                   width:160px;
+                   height: 30px;
+                   border-radius: 20px;
+                   font-size: 10px;
+               }
+               }
+               .works{
+                   height: 500px;
+                   .btn-small{
+                       font-size: 10px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 15px; 
+                    }
+                    &__btns-list{
+                        display: flex;
+                        flex-wrap: wrap;
+                         gap: 12px;
+                         justify-content: center;
+                    }
+       
+                       &__buildings{
+                           width: 241px;
+                           height: 95px;
+                            display: inline-flex;
+                            margin-top: 30px;
+                       }
+                       &__examples-group{
+                             display: inline-flex;
+                             gap: 10px;
+                       }
+                       &__stereo{
+                           width: 105px;
+                           height: 82px;
+                           margin-top: 10px;
+                       }
+                       &__artist{
+                        width: 105px;
+                        height: 82px;
+                           margin-top: 10px;
+                       }
+                       &__landscape{
+                        width: 241px;
+                        height: 95px;
+                           display: inline-flex;
+                           margin-top: 10px;
+                       }
+                       &__scheme{
+                           width: 116px;
+                           height: 91px;
+                           margin-top: 10px;}
+                       &__posts{
+                        width: 116px;
+                        height: 91px;
+                           margin-top: 10px;}
+               }
+               .designer{
+                   padding-top: 30px;
+                   height: 270px;
+                  
+                       &__photo-man{
+                               display: none;
+                           }
+                           &__photo-about{
+                               width: 254px;
+                               height: 250px;
+                           }
+                           &__title{
+                                   color: $black_main;
+                               font-size: 18px;
+                               font-style: normal;
+                               font-weight: 600;
+                               line-height: 24px; 
+                               width: 298px;
+                               margin-left: -20px;
+                               margin-bottom: 15px;
+                               
+                           }
+                           &__text{
+                               color: $black_main;
+                               font-size: 10px;
+                               font-style: normal;
+                               font-weight: 400;
+                               line-height: 15px; 
+                               width: 234px;
+                               padding-bottom: 10px;
+                               margin-left: -50px;
+                           }
+                           &__text-numbers{
+                           font-size: 12px;
+                               font-style: normal;
+                               font-weight: 600;
+                               line-height: 10px; 
+                           }
+                           &__numbers-text{
+                               font-size: 10px;
+                               font-style: normal;
+                               font-weight: 400;
+                               line-height: 15px; 
+                           }
+                           &__statistics-all{
+                               margin-left: -30px;
+                               margin-top: 15px;
+                           gap: 30px;}
+                           &__statistics{
+                               gap: 5px;
+                           }
+                           &__descr{
+                               display: inline-flex;
+                               justify-content: center;
+                               align-items:center;
+                               padding-left: 0px;
+                           } }
+                   .services{
+                       &__content{
+                           height: 1200px;
+                   }
+                   .card{
+                      max-width:230px;  
+                      
+                   }
+                   &__cards{
+                       justify-content: center;
+       
+                   }
+                   &__cards-elements{
+                       width: 170px;
+                   }
+                   &__title{
+                       font-size: 20px;
+                       font-style: normal;
+                       font-weight: 600;
+                   padding: 30px 0 30px 0;
+                   }}
+                   .price{
+                       height: 800px;
+                       padding-top: 30px;
+                       &__title{
+                           font-size: 20px;
+                           font-style: normal;
+                           font-weight: 600;
+                           line-height: 34px;   
+                       }
+                       &__card{  
+                           width: 270px;
+                          margin-top: 30px;
+                           }
+                       &__form{
+                           height: 100px;
+                           width: 240px ;
+                       }
+                       &__card_btn-count{
+                           width: 230px ;
+       
+                       }
+                       &__thype{
+                           width: 240px ; 
+                       }
+                      &__checkbox-text{
+                        font-size: 10px;
+                      }
+                       &__card_btn{
+                           padding-top: 100px;
+                       }
+                       &__slip{
+                           width: 270px;
+                           height: 300px;
+                           gap: 10px;
+           
+                       }
+                       &__slip_title{
+                              font-size: 20px;}
+                       &__slip_btn-discuss{
+                               width: 200px;
+                           }
+                   }
+                   .feedback{
+                  &__content{
+                    height: 1000px;
+                  }
+                       &__title{
+                        padding: 30px 0 30px 0;
+                           font-size: 25px;
+                           font-style: normal;
+                           font-weight: 600;
+                           line-height: 34px; 
+                       }
+                       &__cards{
+                           display: inline-flex;
+                        width: 270px;
+                       }
+                       &__cards-second{
+                           gap: 10px;
+                       }
+                       &__text{
+                           font-size: 10px;
+                           font-style: normal;
+                           font-weight: 500;
+                           line-height: 15px;
+                       }
+                       &__text-list{
+                           font-size: 10px;
+                           font-style: normal;
+                           font-weight: 500;
+                           line-height: 15px;
+                       }
+                       &__text-descr{
+                        font-size: 15px;
+                        text-align: left;
+                       }
+                        }
+                       .card_feedback{
+                        width: 270px;
+                       }
+                       .application{
+                           height: 900px;
+                           &__title{
+                               font-size: 25px;
+                               padding: 30px 0 30px 0;
+                           }
+                           &__title-descr{
+                            font-size: 15px;
+                           }
+                           &__card{
+                               margin-top: 40px;
+                               height: 600px;
+                               width: 270px;
+                           }
+                           &__form{
+                               width: 250px;
+                           }
+                           &__thype{
+                               width: 250px;
+                           }
+                           &__comment{
+                               width: 250px;
+                           }
+                           &__btn-submit{
+                               width: 250px;
+                           }
+                           &__social{
+                               top: 5060px;
+                               right: 100px;
+                               flex-direction: row; }}}

@@ -1,0 +1,56 @@
+.feedback{
+    text-align: center;
+    &__content{
+        height: 1232px;
+flex-shrink: 0;
+background: $black_main;
+    }
+
+&__title{
+    padding: 120px 0px 80px 0px;
+}
+&__cards{
+display: flex;
+width: 1160px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+}
+&__cards-second{
+display: flex;
+padding: 32px 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+border-radius: 16px;
+border: 1px solid #000;
+background: #FFF;
+height: 328px;
+}
+&__button-cross{
+    width: 16px;
+    height: 16px;
+    background-image: url('../icons/cross.svg');
+    background-color:$white_main;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+&__descr{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+&__text{
+    text-align: left;
+}
+&__text-list{
+    text-align: left;
+    list-style-position: inside;
+}
+
+
+
+
+}

@@ -1,0 +1,49 @@
+.btn {
+display: flex;
+padding: 15px 24px 17px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+background: $black_main;
+
+color: $white_main;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+}
+.btn_outlined{
+gap: 12px;
+border: 2px solid $black_main;
+background: none;
+color: $black_main;
+}
+.btn-small{
+    background: $black_main;
+    display: flex;
+    padding: 4px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 10000px;
+
+    color: $white_main;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  
+}
+.btn-small_outlined{
+border: 1px solid $black_main;
+background: none;
+color: $black_main;
+}
+.button-plus{
+    width: 16px;
+    height: 16px;
+    background-image: url('../icons/plus.svg');
+    background-color:$white_main;
+    flex-shrink: 0;
+    cursor: pointer;
+}
